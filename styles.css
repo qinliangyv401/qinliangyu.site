@@ -1,70 +1,26 @@
+/* Import Optima font from the server */
+@font-face {
+  font-family: 'Optima';
+  src: url('/Optima-Regular.ttf') format('truetype'); /* Assuming the font is in the root directory */
+}
+
+/* Apply black background and white text */
 body {
-  font-variant-ligatures: common-ligatures;
-}
-
-.justify-text {
-  text-align: justify;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 900;
-  color: #000000;
-  font-size: 32px;
-  line-height: 0.95;
-  text-transform: uppercase;
-  letter-spacing: -1px;
-  max-width: 1920px;
-  margin: 0 auto;
-  padding: 0px;
-  display: inline-block;
-}
-
-.uppercase-text {
-  text-transform: uppercase;
-  font-variant-ligatures: normal;
-}
-
-.justify-text::before,
-.justify-text::after {
-  content: "";
-  flex: 1;
-}
-
-#main-content, #projects {
-  max-width: 1920px;
-  margin: -10 auto;
-  padding: 0px;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* 分栏样式 */
-#main-content p {
-  column-count: 1;
-  column-gap: 20px;
-  text-align: justify;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 600;
+  background-color: black;
+  color: white;
+  font-family: 'Optima', sans-serif;
   font-size: 16px;
-  color: #000000;
-  font-variant-ligatures: normal;
+  line-height: 0.6;
+  margin: 0;
+  padding: 20px; /* Optional: Add some padding for better readability */
 }
 
-/* 样式修改 */
-.container {
-  display: flex;
-  gap: 8px;
+p {
+  margin: 0; /* Optional: Remove margin around paragraphs */
 }
 
-.column {
-  flex: 1;
+/* 保持超链接的样式与普通文本一致 */
+a.no-style-link {
+  text-decoration: underline;  /* 去掉默认的下划线 */
+  color: inherit;         /* 使超链接颜色继承自父元素（这里是正文的颜色） */
 }
-
-.uppercase-text {
-  margin: 10;
-  padding: 0px 0;
-  font-size: 16px;
-  text-align: center;
-}
-
