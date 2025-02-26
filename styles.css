@@ -29,7 +29,7 @@ body {
   flex: 1;                /* 右侧自适应宽度 */
   padding: 13px;
   line-height: 1.2; /* 调整行距为1.6 */
-  background-color: #bd4a4a; /* 给右侧添加背景色 */
+  background-color: #000000; /* 给右侧添加背景色 */
   margin-right: 20px;
   max-width: 680px;
 }
@@ -56,7 +56,7 @@ a.no-style-link {
     width: 100%; /* 使右列宽度自适应 */
     padding: 13px;
     margin-right: 40px;
-    background-color: #87abb5;
+    background-color: #000000;
   }
 }
 
