@@ -1,10 +1,8 @@
-/* Import Optima font from the server */
 @font-face {
   font-family: 'Optima';
-  src: url('/Optima-Regular.ttf') format('truetype'); /* Assuming the font is in the root directory */
+  src: url('/Optima-Regular.ttf') format('truetype');
 }
 
-/* Apply black background and white text */
 body {
   background-color: black;
   color: white;
@@ -12,15 +10,14 @@ body {
   font-size: 18px;
   line-height: 0.6;
   margin: 0;
-  padding: 20px; /* Optional: Add some padding for better readability */
+  padding: 20px;
 }
 
 p {
-  margin: 0; /* Optional: Remove margin around paragraphs */
+  margin: 0;
 }
 
-/* 保持超链接的样式与普通文本一致 */
 a.no-style-link {
-  text-decoration: underline;  /* 去掉默认的下划线 */
-  color: inherit;         /* 使超链接颜色继承自父元素（这里是正文的颜色） */
+  text-decoration: underline;
+  color: inherit;
 }
